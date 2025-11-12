@@ -1,0 +1,15 @@
+.box{
+    width: 150px;
+    height: 150px;
+    border: solid 1px purple;
+    background-color: antiquewhite;
+    transition:  2s ease-in-out 0.5s;
+}
+.box:hover{
+    width: 300px;
+    height: 300px;
+}
+body{
+    display: flex;
+    align-items: center;
+}

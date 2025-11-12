@@ -1,0 +1,24 @@
+section{
+    display: flex;
+
+}
+.div-main{
+    width: 500px;
+    height: 500px;
+    border: solid 4px green;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.div-sub{
+    width: 80px;
+    height: 80px;
+    border: solid 3px blue;
+    box-sizing: border-box;
+    
+}
+.goat{
+    align-self: center;
+}

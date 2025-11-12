@@ -1,0 +1,147 @@
+
+body {
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15%;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.header li {
+    list-style-type: none;
+}
+
+.hire {
+    text-decoration: underline;
+}
+
+.extra {
+    visibility: hidden;
+}
+
+.hire:hover {
+    
+}
+
+.section1 {
+    /* padding-top: 30px; */
+    /* padding-bottom: 30px; */
+    padding: 20px 15% 50px;
+}
+
+.section1-heading {
+    font-size: 70px;
+}
+
+.section1-img {
+    height: 720px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.section1-lorem {
+    max-width: 50%;
+}
+
+.section1-footer {
+    text-decoration: underline;
+}
+
+.section2 {
+    background-color: black;
+    color: white;
+    padding: 20px 15% 70px;
+}
+
+.section2-heading {
+    font-size: 70px;
+}
+
+.section2-footer {
+    text-decoration: underline;
+}
+
+.section3 {
+    padding: 70px 15% 70px;
+}
+
+.section3-header {
+    font-size: 30px;
+}
+
+.section3-img {
+    height: 300px;
+    width: 500px;
+}
+
+.section3-img-container {
+ display: grid;   
+ grid-template-columns: 50% 50%;
+ grid-template-rows: 50% 50%;
+ gap: 50px;
+}
+
+
+.section4 {
+    background-color: black;
+    padding: 70px 15% 70px;
+}
+
+.section4-heading {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.section4-img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-row-gap: 150px;
+    grid-column-gap: 150px;
+}
+
+.section4-img {
+    height: 20px;
+}
+
+.section5 {
+    padding: 70px 15% 70px;
+}
+
+.section5-bigText {
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 125%;
+}
+
+.section5-footer {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.section3-divide:hover, .section3-header:hover, .section5-footer:hover, .section1-footer:hover, .header ul li:hover, .hire:hover, .foundation1:hover, .section6 ul li:hover {
+    opacity: 0.5;
+}
+
+.section6 {
+    padding: 70px 15% 70px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.section6 ul li {
+    list-style: none;
+}

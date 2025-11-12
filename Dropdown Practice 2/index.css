@@ -1,0 +1,33 @@
+body {
+ margin: 0;   
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+header {
+    background-color: #666666;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar > ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 30%;
+}
+
+.navbar ul > li {
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.dropdown-content li {
+    background-color: hsl(0, 0%, 51%);
+}

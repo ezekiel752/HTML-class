@@ -1,0 +1,14 @@
+.button{
+    background-color: slategrey;
+    color: white;
+}
+.content li{
+    display: none;
+    list-style-type: none;
+}
+/* .content{
+    display: none;
+} */
+.button:hover .content li{
+    display: block;
+}

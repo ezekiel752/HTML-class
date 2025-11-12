@@ -1,0 +1,308 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.header {
+    background-color: #fcd750;
+    position: sticky;
+    top: 0;
+    padding: 10px 15%; 
+    /* Apply this same padding to all the other sections */
+}
+
+.inner-container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-content {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar-content li {
+    list-style-type: none;
+}
+
+.navbar-content li a {
+    text-decoration: none;
+    color: black;
+}
+
+.section1 {
+    background-color: #fcd750;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+    padding: 100px 15%;
+}
+
+.section1-image {
+    padding-top: 10px;
+}
+
+.section1-img {
+    height: 450px;
+    width: 450px;
+}
+
+.icons-section1 {
+    height: 75px;
+    width: 75px;
+}
+
+.section1-welcome {
+    background-color: #2d2c4c;
+    color: white;
+    display: inline-block;
+    padding: 4px 7px;
+    font-size: 20px;
+}
+
+.section1-body {
+    font-size: 100px;
+    color: #2d2c4c;
+    max-width: 500px;
+    word-wrap: break-word;
+    margin: 0;
+    line-height: 1;
+}
+
+.section1-footer {
+    color: #2d2c4c;
+    font-size: 25px;
+    max-width: 500px;
+    word-wrap: break-word;
+}
+
+.section1-top {
+    display: grid;
+    grid-template-columns: 60% 40%; /*This was the code that fixed the whole problem that i had for weeks*/
+    /* Just to be clear the code made 2 boxes that actually respected the padding i added */
+    margin-top: 20px;
+}
+
+.setion1-text {
+    height: 300px;
+    width: 50%;
+}
+
+.section1-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.section1-icontext {
+    max-width: 300px;
+}
+
+.section1-icon-head {
+    color: #20a5dd;
+}
+
+.section1-button {
+    color: white;
+    background-color: #20a5dd;
+    border: #20a5dd;
+    border-radius:5px;
+    padding: 10px;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.section2-image {
+    justify-self: center;
+}
+
+.section2-img {
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+}
+
+.section2-process {
+    font-size: 15px;
+    background-color: #2d2c4c;
+    color: white;
+    display: inline-block;
+    padding: 4px 7px;
+}
+
+.section2-way {
+    font-size: 70px;
+    margin: 0;
+    font-family: 'poppins';
+}
+
+.section2-web {
+    font-size: 25px;
+    margin: 0;
+}
+
+.section2-iconstyle {
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+    margin-top: 40px;
+}
+
+.section2-iconText {
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.section2-container {
+    display: grid;
+    grid-template-columns: 39% 61%;
+}
+
+.section2-iconHead {
+    color: #20a5dd;
+}
+
+.section3 {
+    background-color: #bce3f5;
+    padding: 30px 23% 10px;
+}
+
+.section3-container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.section3-top {
+    justify-self: center;
+}
+
+.section3-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.section3-design {
+    background-color: #2d2c4c;
+    color: white;
+    display: inline;
+    padding: 4px 7px;
+}
+
+.section3-features {
+    font-size: 70px;
+    margin: 0;
+    color: #2d2c4c;
+}
+
+.section3-text {
+    color: #2d2c4c;
+    font-size: 22px;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+.section3-iconText {
+    color: #20a5dd;
+}
+
+.section4-container {
+    display: grid;
+    grid-template-columns: 38% 62%;
+}
+
+.section4-image {
+    justify-self: center;
+}
+
+.section4-text {
+    /* display: grid;
+    grid-template-rows: 50% 50%; */
+}
+
+.section4-img {
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+    /* transform: rotate(180deg); */
+}
+
+.section4 {
+    padding: 150px 15% 150px;
+}
+
+.section4-whatever {
+    background-color: #2d2c4c;
+    color: white;
+    display: inline;
+    padding: 4px 7px;
+}
+
+.section4-services {
+    font-size: 70px;
+    margin: 0;
+    color: #2d2c4c;
+}
+
+.section4-topText {
+    color: #2d2c4c;
+    font-size: 22px;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+.section4-head {
+    color: #20a5dd;
+}
+
+.section4-icontext {
+    max-width: 300px;
+}
+
+.section4-bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section5 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fcd750;
+    display: block;
+}
+
+.section5-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section5-icon {
+    height: fit-content;
+    width: fit-content;
+}
+
+.section5-text {
+    max-width: 450px;
+    text-align: center;
+}
+
+.section5-button {
+    border: #2d2c4c;
+    border-radius: 5px;
+    padding: 20px 30px;
+    background-color: #2d2c4c;
+    color: white;
+    font-size: medium;
+}

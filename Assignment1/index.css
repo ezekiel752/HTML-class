@@ -1,0 +1,115 @@
+
+/* Make the body fill the screen */
+body {
+  margin: 0;
+  height: 100vh;
+  /* display: flex; */
+  background-color: #10151d; /* background behind dots */
+  color: white;
+  font-family: sans-serif;
+
+  /* Create evenly spaced dots using radial gradients */
+  background-image:
+    radial-gradient(circle, #2e3c51 3%, transparent 2%);
+  background-size: 100px 100px; /* grid size */
+  background-position: 0 0; /* offset second layer */
+  
+  /* Animate the entire pattern's position */
+  animation: dotMove 8s linear infinite;
+}
+
+/* Keyframes to slowly drift the pattern */
+@keyframes dotMove {
+  0%   { background-position: 0 0; }
+  100% { background-position: 0 -100px; }
+}
+.sidebar{
+    height: 100vh;
+    width: 70px;
+    background-color: #161f2c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: rgba(255, 2555, 255, 0.1) solid 1px;
+
+}
+.logo img{
+    width: 40px;
+    height: auto;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.google img{
+    width: 40px;
+    height: auto;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+.content{
+    margin-left: 70px;
+    
+}
+.display-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.display{
+    border: #2e3c51 solid 1px;
+    padding: 20px;
+    box-sizing: border-box;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+}
+.img{
+    width: 125px;
+    height: 125px;
+}
+.writing-container{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+.main{
+    font-size: 30px;
+    padding-top: 50px;
+}
+.writing{
+    margin-left: 410px;
+    margin-right: 410px;
+}
+
+.div-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+button{
+    width: 230px;
+    height: 50px;
+    background-color: #a87ffb;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.div-button a{
+    text-decoration: none;
+}
+button:hover{
+    background-color: #ffffff;
+}
+.arrow{
+    font-size: 20px;
+}
+button .arrow{
+    transition: 0.5s;
+}
+button:hover .arrow{
+    padding-left: 6px;
+}

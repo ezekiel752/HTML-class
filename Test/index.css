@@ -1,0 +1,46 @@
+/* Global reset */
+* { 
+  box-sizing: border-box; 
+}
+
+html, body { 
+  margin: 0; padding: 0; 
+}
+
+/* Shared container used everywhere for consistent side spacing */
+.container {
+  max-width: 1200px;    /* pick whatever works for you */
+  margin: 0 auto;       /* centers the container */
+  padding: 0 5vw;       /* even, responsive side padding */
+}
+
+/* Header */
+.site-header {
+  background-color: #fcd750;  /* full-width background */
+  /* avoid width:100vw; use the default full width */
+}
+
+/* make the container in the header a flex row */
+.site-header .container {
+  height: 100px;                /* same header height */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Nav reset + styles */
+.navbar-content {
+  display: flex;
+  gap: 50px;
+  margin: 0;    /* important: reset default UL margin */
+  padding: 0;   /* reset default UL padding */
+  list-style: none;
+}
+
+/* Example hero section */
+.hero {
+  background: white; 
+  }
+.hero .container {
+  padding-top: 40px; padding-bottom: 40px; 
+}
