@@ -1,0 +1,39 @@
+
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+.header {
+    background-color: #3e82cb;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    color: white;
+    border-radius: 10px;
+}
+
+.header-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.header-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu ul li {
+    display: inline;
+}
+
+.header-spacer {
+    visibility: hidden;
+}
