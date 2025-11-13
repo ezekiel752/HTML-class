@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <svg class="header-icon" viewBox="0 0 24 24" fill="#3e82cb">
+                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+            </svg>
+            <h2>Student Management System</h2>
+        </div>
+        <nav class="header-menu">
+            <ul>
+                <li data-section="add" class="active">+ Add Student</li>
+                <li data-section="view">🕮 View All Students</li>
+                <li data-section="search">🔍︎ Search</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <!-- Add Student Section -->
+        <section id="add-section" class="section active">
+            <div class="card">
+                <h2>Add New Student</h2>
+                <div id="success-message" class="success-message">
+                    Student added successfully!
+                </div>
+                <form id="student-form">
+                    <div class="form-group">
+                        <label for="name">Student Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-id">Student ID *</label>
+                        <input type="text" id="student-id" name="student-id" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">Course *</label>
+                        <input type="text" id="course" name="course" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="grade">Grade *</label>
+                        <input type="number" id="grade" name="grade" min="0" max="100" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enrollment-date">Enrollment Date *</label>
+                        <input type="date" id="enrollment-date" name="enrollment-date" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Add Student</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- View All Students Section -->
+        <section id="view-section" class="section">
+            <div class="stats">
+                <div class="stat-card">
+                    <h3 id="total-students">0</h3>
+                    <p>Total Students</p>
+                </div>
+                <div class="stat-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <h3 id="avg-grade">0</h3>
+                    <p>Average Grade</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>All Students</h2>
+                <div class="table-container">
+                    <table id="students-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>ID</th>
+                                <th>Email</th>
+                                <th>Course</th>
+                                <th>Grade</th>
+                                <th>Enrollment Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="students-tbody">
+                            <tr>
+                                <td colspan="7" class="empty-state">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                                    </svg>
+                                    <p>No students added yet. Add your first student to get started!</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section id="search-section" class="section">
+            <div class="card">
+                <h2>Search Students</h2>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search by name, ID, email, or course...">
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>ID</th>
+                                <th>Email</th>
+                                <th>Course</th>
+                                <th>Grade</th>
+                                <th>Enrollment Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="search-results">
+                            <tr>
+                                <td colspan="6" class="empty-state">
+                                    <p>Enter a search term to find students</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
