@@ -27,7 +27,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 20%;
 }
 
 .header-menu ul li {
@@ -36,4 +36,28 @@ body {
 
 .header-spacer {
     visibility: hidden;
+}
+
+.main-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.sub-container {
+    background-color: #f5f9fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    flex: 1 1 300px;
+}
+
+.mid-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    flex: 1 1 300px;
 }
