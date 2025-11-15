@@ -1,4 +1,8 @@
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'poppins', sans-serif;
     margin: 0;
@@ -8,18 +12,31 @@ body {
 
 .header {
     background-color: #3e82cb;
-    padding: 10px;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 15px;
+    justify-content: space-between;
     color: white;
-    border-radius: 10px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .header-icon {
     height: 40px;
     width: 40px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .header-menu ul {
@@ -27,15 +44,23 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20%;
+    gap: 30px;
 }
 
 .header-menu ul li {
-    display: inline;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s;
 }
 
-.header-spacer {
-    visibility: hidden;
+.header-menu ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-menu ul li:active {
+    background-color: rgba(255, 255, 255, 0.3)
 }
 
 .main-container {
